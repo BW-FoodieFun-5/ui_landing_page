@@ -126,16 +126,80 @@ table {
   border-spacing: 0;
 }
 * {
+  border: 1px solid grey;
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
 }
+nav {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 body {
   background-image: url(../images/FF_landing.png);
   background-repeat: no-repeat;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #ecb847;
 }
-h1 {
-  font-size: 300px;
-  color: white;
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
+  font-size: 4.8rem;
+}
+.questions h3 {
+  font-style: normal;
+  font-weight: normal;
+  margin: 1.5rem;
+}
+.statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-style: normal;
+}
+.statement h3 {
+  font-size: 6rem;
+  width: 105rem;
+  line-height: 8.1rem;
+  text-align: center;
+}
+.statement p {
+  font-size: 2.4rem;
+}
+.bottom_part {
+  margin-top: 3.5rem;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom_part #FoodieFun {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 8.1rem;
+}
+.bottom_part button {
+  background-color: #c45228;
+  border-radius: 0.3rem;
+  color: #ecb847;
+  width: 382px;
+  height: 120px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+.bottom_part #tail {
+  font-style: normal;
+  font-weight: 50rem;
+  font-size: 7.2rem;
+  line-height: 9.7rem;
 }

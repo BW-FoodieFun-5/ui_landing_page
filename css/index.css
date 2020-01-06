@@ -153,6 +153,11 @@ nav a {
     font-size: 23rem;
   }
 }
+@media (max-width: 420px) {
+  nav a:hover {
+    color: #e7a619;
+  }
+}
 body {
   font-family: 'Archivo Narrow', sans-serif;
   font-style: normal;
@@ -251,6 +256,11 @@ body {
     font-size: 20rem;
     width: 100%;
     line-height: 60rem;
+  }
+}
+@media (max-width: 420px) {
+  .bottom_part button:hover {
+    background-color: #af4924;
   }
 }
 .bottom_part #tail {

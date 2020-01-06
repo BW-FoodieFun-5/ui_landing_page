@@ -126,7 +126,6 @@ table {
   border-spacing: 0;
 }
 * {
-  border: 1px solid grey;
   box-sizing: border-box;
 }
 html {
@@ -143,6 +142,8 @@ body {
   background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
   background-repeat: no-repeat;
   font-family: 'Archivo Narrow', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: #ecb847;
 }
 .questions {
@@ -153,8 +154,6 @@ body {
   font-size: 4.8rem;
 }
 .questions h3 {
-  font-style: normal;
-  font-weight: normal;
   margin: 1.5rem;
 }
 .statement {
@@ -162,7 +161,6 @@ body {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  font-style: normal;
 }
 .statement h3 {
   font-size: 6rem;
@@ -181,7 +179,6 @@ body {
   align-items: center;
 }
 .bottom_part #FoodieFun {
-  font-style: normal;
   font-weight: bold;
   font-size: 6rem;
   line-height: 8.1rem;
@@ -189,16 +186,15 @@ body {
 .bottom_part button {
   background-color: #c45228;
   border-radius: 0.3rem;
-  color: #ecb847;
   width: 382px;
   height: 120px;
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   text-align: center;
+  border: none;
 }
 .bottom_part #tail {
-  font-style: normal;
   font-weight: 50rem;
   font-size: 7.2rem;
   line-height: 9.7rem;

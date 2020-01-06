@@ -1,10 +1,18 @@
 body {
-  background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
-  background-repeat: no-repeat;
   font-family: 'Archivo Narrow', sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: @textCol;
+  background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
+  background-repeat: no-repeat;
+
+  @media @mobile {
+    background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)),
+      url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 .questions {
@@ -13,6 +21,15 @@ body {
   font-size: 4.8rem;
   h3 {
     margin: 1.5rem;
+  }
+  @media @mobile {
+    margin: 50rem;
+    font-size: 30rem;
+    text-align: center;
+    h3 {
+      margin: 1.5rem;
+      margin-bottom: 20rem;
+    }
   }
 }
 
@@ -23,11 +40,22 @@ body {
     font-size: 6rem;
     width: 105rem;
     line-height: 8.1rem;
-    line-height: 8.1rem;
     text-align: center;
   }
   p {
     font-size: 2.4rem;
+  }
+
+  @media @mobile {
+    h3 {
+      font-size: 30rem;
+      width: 80%;
+      line-height: 40rem;
+      text-align: center;
+    }
+    p {
+      font-size: 15rem;
+    }
   }
 }
 
@@ -40,6 +68,10 @@ body {
     font-weight: bold;
     font-size: 6rem;
     line-height: 8.1rem;
+    @media @mobile {
+      font-size: 40rem;
+      line-height: 50rem;
+    }
   }
 
   button {
@@ -53,11 +85,26 @@ body {
     line-height: 40px;
     text-align: center;
     border: none;
+
+    @media @mobile {
+      height: 92%;
+      font-size: 20rem;
+      width: 100%;
+      line-height: 60rem;
+    }
   }
 
   #tail {
     font-weight: 50rem;
     font-size: 7.2rem;
     line-height: 9.7rem;
+
+    @media @mobile {
+      font-size: 20rem;
+      line-height: 20rem;
+    }
+  }
+  @media @mobile {
+    margin-top: 30rem;
   }
 }

@@ -127,9 +127,16 @@ table {
 }
 * {
   box-sizing: border-box;
+  color: #ecb847;
 }
 html {
   font-size: 62.5%;
+}
+@media (max-width: 420px) {
+  html {
+    margin-top: 1rem;
+    font-size: 6.25%;
+  }
 }
 nav {
   font-size: 1.8rem;
@@ -138,13 +145,29 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+nav a {
+  text-decoration: none;
+}
+@media (max-width: 420px) {
+  nav {
+    font-size: 23rem;
+  }
+}
 body {
-  background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
-  background-repeat: no-repeat;
   font-family: 'Archivo Narrow', sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #ecb847;
+  background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 420px) {
+  body {
+    background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)), url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 .questions {
   display: flex;
@@ -155,6 +178,17 @@ body {
 }
 .questions h3 {
   margin: 1.5rem;
+}
+@media (max-width: 420px) {
+  .questions {
+    margin: 50rem;
+    font-size: 30rem;
+    text-align: center;
+  }
+  .questions h3 {
+    margin: 1.5rem;
+    margin-bottom: 20rem;
+  }
 }
 .statement {
   display: flex;
@@ -171,6 +205,17 @@ body {
 .statement p {
   font-size: 2.4rem;
 }
+@media (max-width: 420px) {
+  .statement h3 {
+    font-size: 30rem;
+    width: 80%;
+    line-height: 40rem;
+    text-align: center;
+  }
+  .statement p {
+    font-size: 15rem;
+  }
+}
 .bottom_part {
   margin-top: 3.5rem;
   font-size: 5rem;
@@ -183,6 +228,12 @@ body {
   font-size: 6rem;
   line-height: 8.1rem;
 }
+@media (max-width: 420px) {
+  .bottom_part #FoodieFun {
+    font-size: 40rem;
+    line-height: 50rem;
+  }
+}
 .bottom_part button {
   background-color: #c45228;
   border-radius: 0.3rem;
@@ -194,8 +245,27 @@ body {
   text-align: center;
   border: none;
 }
+@media (max-width: 420px) {
+  .bottom_part button {
+    height: 92%;
+    font-size: 20rem;
+    width: 100%;
+    line-height: 60rem;
+  }
+}
 .bottom_part #tail {
   font-weight: 50rem;
   font-size: 7.2rem;
   line-height: 9.7rem;
+}
+@media (max-width: 420px) {
+  .bottom_part #tail {
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+}
+@media (max-width: 420px) {
+  .bottom_part {
+    margin-top: 30rem;
+  }
 }

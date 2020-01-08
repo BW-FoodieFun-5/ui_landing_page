@@ -192,6 +192,7 @@ body {
   vertical-align: middle;
   margin: 5rem;
   font-size: 4.8rem;
+  text-align: center;
 }
 .questions h3 {
   margin: 1.5rem;
@@ -216,7 +217,7 @@ body {
 }
 .statement h3 {
   font-size: 6rem;
-  width: 105rem;
+  width: 100%;
   line-height: 8.1rem;
   text-align: center;
 }
@@ -226,7 +227,6 @@ body {
 @media (max-width: 420px) {
   .statement h3 {
     font-size: 30rem;
-    width: 80%;
     line-height: 40rem;
     text-align: center;
   }
@@ -237,6 +237,7 @@ body {
 .bottom_part {
   margin-top: 3.5rem;
   font-size: 5rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;

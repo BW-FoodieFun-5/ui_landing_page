@@ -289,9 +289,13 @@ body {
   font-size: 10rem;
   font-weight: bolder;
 }
-.dev_img {
-  border-radius: 5rem;
-  max-block-size: 40rem;
+@media (max-width: 420px) {
+  .about-header {
+    margin: 20rem;
+    font-size: 55rem;
+    font-weight: bolder;
+    text-align: center;
+  }
 }
 .devs-set {
   flex-wrap: wrap;
@@ -299,25 +303,87 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 420px) {
+  .devs-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .dev {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 5rem;
   margin: 3rem;
   padding: 4rem;
   border: 10px solid #eec15e;
   border-radius: 10rem;
 }
+.dev .dev_img {
+  border-radius: 5rem;
+  max-block-size: 40rem;
+}
+@media (max-width: 420px) {
+  .dev .dev_img {
+    max-block-size: 250rem;
+    border-radius: 30rem;
+  }
+}
 .dev .name {
   font-size: 5rem;
   text-align: center;
+  margin-top: 2rem;
+}
+@media (max-width: 420px) {
+  .dev .name {
+    font-size: 40rem;
+    line-height: 50rem;
+  }
 }
 .dev p {
   font-size: 3rem;
   text-align: center;
 }
+@media (max-width: 420px) {
+  .dev p {
+    font-size: 15rem;
+    line-height: 50rem;
+  }
+}
+.dev .describer {
+  color: #c45228;
+  line-height: 5rem;
+}
+@media (max-width: 420px) {
+  .dev .describer {
+    font-size: 15rem;
+    font-weight: bold;
+    line-height: 15rem;
+  }
+}
 .dev .soc-med {
   text-align: center;
   font-size: 4rem;
   vertical-align: bottom;
+}
+@media (max-width: 420px) {
+  .dev .soc-med {
+    text-align: center;
+    font-size: 30rem;
+    margin-top: 20rem;
+  }
+}
+@media (max-width: 420px) {
+  .dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 15rem;
+    margin: 15rem;
+    margin-bottom: 100rem;
+    border: 5px solid #ecb847;
+    border-radius: 40rem;
+    padding: 30rem;
+  }
 }

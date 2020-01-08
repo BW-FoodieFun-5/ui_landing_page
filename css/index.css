@@ -140,6 +140,7 @@ html {
   }
 }
 nav {
+  width: 100%;
   font-size: 1.8rem;
   margin-top: 3rem;
   display: flex;
@@ -151,7 +152,12 @@ nav a {
 }
 @media (max-width: 420px) {
   nav {
-    font-size: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 30rem;
+    line-height: 100%;
   }
 }
 @media (max-width: 420px) {
@@ -160,6 +166,7 @@ nav a {
   }
 }
 body {
+  width: 100%;
   font-family: 'Archivo Narrow', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -182,6 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  vertical-align: middle;
   margin: 5rem;
   font-size: 4.8rem;
 }
@@ -203,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  vertical-align: middle;
   font-weight: bold;
 }
 .statement h3 {
@@ -231,6 +240,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  vertical-align: middle;
 }
 .bottom_part #FoodieFun {
   font-weight: bold;
@@ -298,6 +308,9 @@ body {
   }
 }
 .devs-set {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
@@ -308,26 +321,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    vertical-align: middle;
   }
 }
 .dev {
   display: flex;
   flex-direction: column;
   align-items: center;
+  vertical-align: middle;
   line-height: 5rem;
-  margin: 3rem;
-  padding: 4rem;
-  border: 10px solid #eec15e;
+  margin: 3%;
+  padding: 4%;
+  border: 1rem solid #eec15e;
   border-radius: 10rem;
 }
 .dev .dev_img {
-  border-radius: 5rem;
-  max-block-size: 40rem;
+  border-radius: 10rem;
+  max-block-size: 40%;
+  width: 100%;
+  max-height: 50%;
 }
 @media (max-width: 420px) {
   .dev .dev_img {
-    max-block-size: 250rem;
-    border-radius: 30rem;
+    border-radius: 10rem;
+    max-block-size: 40%;
+    width: 100%;
+    max-height: 50%;
   }
 }
 .dev .name {
@@ -379,6 +398,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    vertical-align: middle;
     line-height: 15rem;
     margin: 15rem;
     margin-bottom: 100rem;

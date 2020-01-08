@@ -12,6 +12,9 @@
 }
 
 .devs-set {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
   .wrap-justify-align(space-around, center);
   @media @mobile {
     .direction-align(column, center);
@@ -21,17 +24,21 @@
 .dev {
   .direction-align(column, center);
   line-height: 5rem;
-  margin: 3rem;
-  padding: 4rem;
-  border: 10px solid lighten(@textCol, 5%);
+  margin: 3%;
+  padding: 4%;
+  border: 1rem solid lighten(@textCol, 5%);
   border-radius: 10rem;
 
   .dev_img {
-    border-radius: 5rem;
-    max-block-size: 40rem;
+    border-radius: 10rem;
+    max-block-size: 40%;
+    width: 100%;
+    max-height: 50%;
     @media @mobile {
-      max-block-size: 250rem;
-      border-radius: 30rem;
+      border-radius: 10rem;
+      max-block-size: 40%;
+      width: 100%;
+      max-height: 50%;
     }
   }
   .name {

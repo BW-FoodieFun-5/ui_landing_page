@@ -1,0 +1,19 @@
+.justify-align(@justify,@align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.direction-align(@direction,@align) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  vertical-align: middle;
+}
+
+.wrap-justify-align(@justify,@align) {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}

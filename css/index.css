@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  border: 1px solid grey;
+  box-sizing: border-box;
+  color: #ecb847;
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 420px) {
+  html {
+    margin-top: 1rem;
+    font-size: 6.25%;
+  }
+}
+nav {
+  width: 100%;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav :hover {
+  color: #e7a619;
+}
+@media (max-width: 420px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 30rem;
+    margin: 0;
+  }
+  nav a {
+    margin: 1%;
+  }
+}
+@media (max-width: 420px) {
+  nav a:hover {
+    color: #e7a619;
+  }
+}
+body {
+  width: 100%;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media (max-width: 420px) {
+  body {
+    background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)), url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 5rem;
+  font-size: 4.8rem;
+  text-align: center;
+}
+.questions h3 {
+  margin: 1.5rem;
+}
+@media (max-width: 420px) {
+  .questions {
+    margin: 50rem;
+    font-size: 30rem;
+    text-align: center;
+  }
+  .questions h3 {
+    margin: 1.5rem;
+    margin-bottom: 20rem;
+  }
+}
+.statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+.statement h3 {
+  font-size: 6rem;
+  width: 100%;
+  line-height: 8.1rem;
+  text-align: center;
+}
+.statement p {
+  font-size: 2.4rem;
+}
+@media (max-width: 420px) {
+  .statement h3 {
+    font-size: 30rem;
+    line-height: 40rem;
+    text-align: center;
+  }
+  .statement p {
+    font-size: 15rem;
+  }
+}
+.bottom_part {
+  margin-top: 3.5rem;
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+.bottom_part #FoodieFun {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 8.1rem;
+}
+@media (max-width: 420px) {
+  .bottom_part #FoodieFun {
+    font-size: 40rem;
+    line-height: 50rem;
+  }
+}
+.bottom_part button {
+  background-color: #c45228;
+  border-radius: 0.3rem;
+  width: 382px;
+  height: 120px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  border: none;
+}
+@media (max-width: 420px) {
+  .bottom_part button {
+    height: 92%;
+    font-size: 20rem;
+    width: 100%;
+    line-height: 60rem;
+  }
+}
+@media (max-width: 420px) {
+  .bottom_part button:hover {
+    background-color: #af4924;
+  }
+}
+.bottom_part #tail {
+  font-weight: 50rem;
+  font-size: 7.2rem;
+  line-height: 9.7rem;
+}
+@media (max-width: 420px) {
+  .bottom_part #tail {
+    font-size: 20rem;
+    line-height: 20rem;
+  }
+}
+@media (max-width: 420px) {
+  .bottom_part {
+    margin-top: 30rem;
+  }
+}
+.about-header {
+  margin: 3rem;
+  margin-top: 5rem;
+  font-size: 10rem;
+  font-weight: bolder;
+}
+@media (max-width: 420px) {
+  .about-header {
+    margin: 20rem;
+    font-size: 55rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+.devs-set {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 420px) {
+  .devs-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+  }
+}
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 5rem;
+  margin: 3%;
+  padding: 4%;
+  border: 1rem solid #eec15e;
+  border-radius: 10rem;
+}
+.dev .dev_img {
+  border-radius: 10rem;
+  max-block-size: 40%;
+  width: 100%;
+  max-height: 50%;
+}
+@media (max-width: 420px) {
+  .dev .dev_img {
+    border-radius: 10rem;
+    max-block-size: 40%;
+    width: 100%;
+    max-height: 50%;
+  }
+}
+.dev .name {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+@media (max-width: 420px) {
+  .dev .name {
+    font-size: 40rem;
+    line-height: 50rem;
+  }
+}
+.dev p {
+  font-size: 3rem;
+  text-align: center;
+}
+@media (max-width: 420px) {
+  .dev p {
+    font-size: 15rem;
+    line-height: 50rem;
+  }
+}
+.dev .describer {
+  color: #c45228;
+  line-height: 5rem;
+}
+@media (max-width: 420px) {
+  .dev .describer {
+    font-size: 15rem;
+    font-weight: bold;
+    line-height: 15rem;
+  }
+}
+.dev .soc-med {
+  text-align: center;
+  font-size: 4rem;
+  vertical-align: bottom;
+}
+@media (max-width: 420px) {
+  .dev .soc-med {
+    text-align: center;
+    font-size: 30rem;
+    margin-top: 20rem;
+  }
+}
+@media (max-width: 420px) {
+  .dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 15rem;
+    margin: 15rem;
+    margin-bottom: 100rem;
+    border: 5px solid #ecb847;
+    border-radius: 40rem;
+    padding: 30rem;
+  }
+}

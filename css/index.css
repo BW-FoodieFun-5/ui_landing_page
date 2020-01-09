@@ -150,6 +150,9 @@ nav {
 nav a {
   text-decoration: none;
 }
+nav :hover {
+  color: #e7a619;
+}
 @media (max-width: 420px) {
   nav {
     display: flex;
@@ -157,7 +160,10 @@ nav a {
     align-items: center;
     vertical-align: middle;
     font-size: 30rem;
-    line-height: 100%;
+    margin: 0;
+  }
+  nav a {
+    margin: 1%;
   }
 }
 @media (max-width: 420px) {

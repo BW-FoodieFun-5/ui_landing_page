@@ -10,11 +10,15 @@
   </head>
 
   <body>
-    <nav>
-      <a href="#"> Sign In/ Sign Up</a>
-      <a href="about_devs.html"> About </a>
-      <a>What</a>
-    </nav>
+    <div class="topnav">
+      <a href="#home" class="active"><i class="fas fa-bars"></i></a>
+      <nav id="myLinks">
+        <a href="https://frontend-60aua6dsi.now.sh/signup"> Login</a>
+        <a href="about_devs.html"> About </a>
+        <a>What</a>
+      </nav>
+    </div>
+
     <div class="questions">
       <h3>Do you remember that meal you had two weeks ago?</h3>
       <h3>Was the mild dish perfect, or volcanic?</h3>
@@ -31,5 +35,16 @@
       <button href="#">Sign Up</button>
       <h1 id="tail">You eat out a lot...Remember it!</h1>
     </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById('myLinks');
+        if (x.style.display === 'block') {
+          x.style.display = 'none';
+        } else {
+          x.style.display = 'block';
+        }
+      }
+    </script>
   </body>
 </html>

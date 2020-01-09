@@ -1,3 +1,40 @@
+// hamberger menu starts here
+// .topnav {
+//   overflow: hidden;
+//   background-color: #333;
+//   position: relative;
+
+//   #myLinks {
+//     display: none;
+//   }
+
+//   a {
+//     color: white;
+//     padding: 14px 16px;
+//     text-decoration: none;
+//     font-size: 17px;
+//     display: block;
+//   }
+//   a.icon {
+//     background: red;
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//   }
+
+//   .topnav a:hover {
+//     background-color: brown;
+//     color: black;
+//   }
+
+//   .active {
+//     background-color: #4caf50;
+//     color: white;
+//   }
+// }
+//hamberger menu ends here
+
 nav {
   width: 100%;
   font-size: 1.8rem;
@@ -6,10 +43,16 @@ nav {
   a {
     text-decoration: none;
   }
+  :hover {
+    color: darken(@textCol, 10%);
+  }
   @media @mobile {
     .direction-align(column, center);
     font-size: 30rem;
-    line-height: 100%;
+    margin: 0;
+    a {
+      margin: 1%;
+    }
   }
 
   a:hover {

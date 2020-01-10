@@ -132,7 +132,7 @@ table {
 html {
   font-size: 62.5%;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   html {
     margin-top: 1rem;
     font-size: 6.25%;
@@ -152,7 +152,7 @@ nav a {
 nav :hover {
   color: #e7a619;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ nav :hover {
     margin: 1%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   nav a:hover {
     color: #e7a619;
   }
@@ -181,7 +181,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   body {
     background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)), url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
     background-position: center center;
@@ -202,7 +202,7 @@ body {
 .questions h3 {
   margin: 1.5%;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .questions {
     margin: 50rem;
     font-size: 30rem;
@@ -229,7 +229,7 @@ body {
 .statement p {
   font-size: 2.4rem;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .statement h3 {
     font-size: 30rem;
     line-height: 40rem;
@@ -253,7 +253,7 @@ body {
   font-size: 6rem;
   line-height: 8.1rem;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .bottom_part #FoodieFun {
     font-size: 40rem;
     line-height: 50rem;
@@ -270,7 +270,7 @@ body {
   text-align: center;
   border: none;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .bottom_part button {
     height: 92rem;
     font-size: 20rem;
@@ -278,7 +278,7 @@ body {
     line-height: 60rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .bottom_part button:hover {
     background-color: #af4924;
   }
@@ -288,13 +288,13 @@ body {
   font-size: 7.2rem;
   line-height: 9.7rem;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .bottom_part #tail {
     font-size: 20rem;
     line-height: 20rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .bottom_part {
     margin-top: 30rem;
   }
@@ -305,7 +305,7 @@ body {
   font-size: 10rem;
   font-weight: bolder;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .about-header {
     margin: 20rem;
     font-size: 55rem;
@@ -322,7 +322,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .devs-set {
     display: flex;
     flex-direction: column;
@@ -347,7 +347,7 @@ body {
   width: 100%;
   max-height: 50%;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev .dev_img {
     border-radius: 10rem;
     max-block-size: 40%;
@@ -360,7 +360,7 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev .name {
     font-size: 40rem;
     line-height: 50rem;
@@ -370,7 +370,7 @@ body {
   font-size: 3rem;
   text-align: center;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev p {
     font-size: 15rem;
     line-height: 50rem;
@@ -380,7 +380,7 @@ body {
   color: #c45228;
   line-height: 5rem;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev .describer {
     font-size: 15rem;
     font-weight: bold;
@@ -392,14 +392,14 @@ body {
   font-size: 4rem;
   vertical-align: bottom;
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev .soc-med {
     text-align: center;
     font-size: 30rem;
     margin-top: 20rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .dev {
     display: flex;
     flex-direction: column;

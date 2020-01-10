@@ -327,8 +327,10 @@ body {
   width: 38.2rem;
   height: 12rem;
   margin-bottom: 1.5rem;
+  line-height: 4rem;
+  font-size: 3rem;
 }
-.bottom_part button p {
+.bottom_part button a {
   left: 24.61%;
   right: 24.87%;
   top: 37.5%;
@@ -339,6 +341,7 @@ body {
   text-align: center;
   border: none;
   border-radius: 0.35rem;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .bottom_part button {

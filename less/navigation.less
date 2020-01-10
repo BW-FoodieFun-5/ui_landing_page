@@ -27,13 +27,17 @@ nav :hover {
 @media @mobile {
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: darken(@orange, 8%);
     position: relative;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
+    a {
+      border-bottom: 2px solid black;
+      color: lighten(@textCol, 5%);
+    }
   }
 
   /* Style navigation menu links */
@@ -63,6 +67,9 @@ nav :hover {
     margin-top: 0;
   }
 
+  a.icon:hover {
+    color: #e7a619;
+  }
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: @orange;

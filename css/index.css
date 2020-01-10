@@ -126,7 +126,6 @@ table {
   border-spacing: 0;
 }
 * {
-  border: 1px solid grey;
   box-sizing: border-box;
   color: #ecb847;
 }
@@ -161,12 +160,16 @@ nav :hover {
 @media (max-width: 500px) {
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #a24421;
     position: relative;
   }
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
+  }
+  .topnav #myLinks a {
+    border-bottom: 2px solid black;
+    color: #eec15e;
   }
   /* Style navigation menu links */
   .topnav a {
@@ -195,6 +198,9 @@ nav :hover {
     top: 0;
     height: 48px;
     margin-top: 0;
+  }
+  a.icon:hover {
+    color: #e7a619;
   }
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
@@ -342,11 +348,12 @@ body {
     border-radius: 1.5%;
     margin: auto 3.86% 28px 3.86%;
   }
-  .bottom_part button p {
+  .bottom_part button a {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
+    text-decoration: none;
   }
 }
 @media (max-width: 500px) {

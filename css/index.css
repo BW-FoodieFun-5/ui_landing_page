@@ -126,6 +126,7 @@ table {
   border-spacing: 0;
 }
 * {
+  border: 1px solid grey;
   box-sizing: border-box;
   color: #ecb847;
 }
@@ -134,14 +135,19 @@ html {
 }
 @media (max-width: 500px) {
   html {
-    margin-top: 1rem;
     font-size: 6.25%;
   }
+}
+.active {
+  display: none;
+}
+.icon {
+  display: none;
 }
 nav {
   width: 100%;
   font-size: 1.8rem;
-  margin-top: 3rem;
+  margin-top: 2.4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -153,21 +159,56 @@ nav :hover {
   color: #e7a619;
 }
 @media (max-width: 500px) {
-  nav {
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  /* Style navigation menu links */
+  .topnav a {
     display: flex;
     flex-direction: column;
     align-items: center;
     vertical-align: middle;
-    font-size: 30rem;
-    margin: 0;
+    color: #ecb847;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
   }
-  nav a {
-    margin: 1%;
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    background: #c45228;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 48px;
+    margin-top: 0;
   }
-}
-@media (max-width: 500px) {
-  nav a:hover {
-    color: #e7a619;
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #c45228;
+    color: #ecb847;
+  }
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #c45228;
+    color: #ecb847;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
   }
 }
 body {
@@ -183,7 +224,9 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)), url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -198,15 +241,20 @@ body {
   margin: 5%;
   font-size: 4.8rem;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 6.5rem;
 }
 .questions h3 {
   margin: 1.5%;
 }
 @media (max-width: 500px) {
   .questions {
-    margin: 50rem;
-    font-size: 30rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
+    margin-top: 69px;
   }
   .questions h3 {
     margin: 1.5rem;
@@ -219,6 +267,8 @@ body {
   align-items: center;
   vertical-align: middle;
   font-weight: bold;
+  margin: auto 13.1944444% auto 13.1944444%;
+  width: 73.6111111%;
 }
 .statement h3 {
   font-size: 6rem;
@@ -230,17 +280,21 @@ body {
   font-size: 2.4rem;
 }
 @media (max-width: 500px) {
-  .statement h3 {
-    font-size: 30rem;
-    line-height: 40rem;
+  .statement {
+    width: 95.6%;
+    margin: auto 2.17% auto 2.17%;
     text-align: center;
+  }
+  .statement h3 {
+    font-size: 24px;
+    line-height: 32px;
   }
   .statement p {
     font-size: 15rem;
   }
 }
 .bottom_part {
-  margin-top: 3.5%;
+  margin: 3.5% auto 6.11111111% auto;
   font-size: 5rem;
   text-align: center;
   display: flex;
@@ -255,27 +309,44 @@ body {
 }
 @media (max-width: 500px) {
   .bottom_part #FoodieFun {
-    font-size: 40rem;
+    margin: 49px 3.86% 28px 3.86%;
+    font-size: 60rem;
     line-height: 50rem;
   }
 }
 .bottom_part button {
+  margin-top: 1.5rem;
   background-color: #c45228;
   border-radius: 0.3%;
-  width: 382px;
-  height: 120px;
+  width: 38.2rem;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+}
+.bottom_part button p {
+  left: 24.61%;
+  right: 24.87%;
+  top: 37.5%;
+  bottom: 36.67%;
   font-weight: 500;
   font-size: 3rem;
   line-height: 4rem;
   text-align: center;
   border: none;
+  border-radius: 0.35rem;
 }
 @media (max-width: 500px) {
   .bottom_part button {
-    height: 92rem;
-    font-size: 20rem;
-    width: 100%;
-    line-height: 60rem;
+    height: 120px;
+    width: 92.27%;
+    line-height: 40rem;
+    border-radius: 1.5%;
+    margin: auto 3.86% 28px 3.86%;
+  }
+  .bottom_part button p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media (max-width: 500px) {
@@ -284,19 +355,18 @@ body {
   }
 }
 .bottom_part #tail {
-  font-weight: 50rem;
+  font-weight: 500;
   font-size: 7.2rem;
   line-height: 9.7rem;
+  text-align: center;
+  margin: auto 5% auto 5%;
 }
 @media (max-width: 500px) {
   .bottom_part #tail {
-    font-size: 20rem;
-    line-height: 20rem;
-  }
-}
-@media (max-width: 500px) {
-  .bottom_part {
-    margin-top: 30rem;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
   }
 }
 .about-header {

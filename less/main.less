@@ -10,8 +10,11 @@ body {
   background-size: cover;
 
   @media @mobile {
-    background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)),
-      url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+    // background: linear-gradient(rgba(24, 18, 18, 0.7), rgba(24, 18, 18, 0.7)),
+    //   url(../images/foodism360-4-qDs0YzJH0-unsplash.jpg);
+    background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,13 +27,18 @@ body {
   margin: 5%;
   font-size: 4.8rem;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 6.5rem;
   h3 {
     margin: 1.5%;
   }
   @media @mobile {
-    margin: 50rem;
-    font-size: 30rem;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
+    margin-top: 69px;
     h3 {
       margin: 1.5rem;
       margin-bottom: 20rem;
@@ -41,6 +49,8 @@ body {
 .statement {
   .direction-align(column, center);
   font-weight: bold;
+  margin: auto 13.1944444% auto 13.1944444%;
+  width: 73.6111111%;
   h3 {
     font-size: 6rem;
     width: 100%;
@@ -52,11 +62,12 @@ body {
   }
 
   @media @mobile {
+    width: 95.6%;
+    margin: auto 2.17% auto 2.17%;
+    text-align: center;
     h3 {
-      font-size: 30rem;
-
-      line-height: 40rem;
-      text-align: center;
+      font-size: 24px;
+      line-height: 32px;
     }
     p {
       font-size: 15rem;
@@ -65,7 +76,7 @@ body {
 }
 
 .bottom_part {
-  margin-top: 3.5%;
+  margin: 3.5% auto 6.11111111% auto;
   font-size: 5rem;
   text-align: center;
   .direction-align(column, center);
@@ -75,48 +86,65 @@ body {
     font-size: 6rem;
     line-height: 8.1rem;
     @media @mobile {
-      font-size: 40rem;
+      margin: 49px 3.86% 28px 3.86%;
+      font-size: 60rem;
       line-height: 50rem;
     }
   }
 
   button {
+    margin-top: 1.5rem;
     background-color: #c45228;
     border-radius: 0.3%;
-    width: 382px;
-    height: 120px;
-
-    font-weight: 500;
-    font-size: 3rem;
-    line-height: 4rem;
-    text-align: center;
-    border: none;
+    width: 38.2rem;
+    height: 12rem;
+    margin-bottom: 1.5rem;
+    p {
+      left: 24.61%;
+      right: 24.87%;
+      top: 37.5%;
+      bottom: 36.67%;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4rem;
+      text-align: center;
+      border: none;
+      border-radius: 0.35rem;
+    }
 
     @media @mobile {
-      height: 92rem;
-      font-size: 20rem;
-      width: 100%;
-      line-height: 60rem;
+      height: 120px;
+      width: 92.27%;
+      line-height: 40rem;
+      border-radius: 1.5%;
+      margin: auto 3.86% 28px 3.86%;
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+      }
     }
   }
 
   button:hover {
     @media @mobile {
-      background-color: darken(#c45228, 5%);
+      background-color: darken(@orange, 5%);
     }
   }
 
   #tail {
-    font-weight: 50rem;
+    font-weight: 500;
     font-size: 7.2rem;
     line-height: 9.7rem;
-
+    text-align: center;
+    margin: auto 5% auto 5%;
     @media @mobile {
-      font-size: 20rem;
-      line-height: 20rem;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
     }
-  }
-  @media @mobile {
-    margin-top: 30rem;
   }
 }

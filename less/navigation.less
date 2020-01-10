@@ -1,63 +1,83 @@
-// hamberger menu starts here
-// .topnav {
-//   overflow: hidden;
-//   background-color: #333;
-//   position: relative;
+.active {
+  display: none;
+}
 
-//   #myLinks {
-//     display: none;
-//   }
-
-//   a {
-//     color: white;
-//     padding: 14px 16px;
-//     text-decoration: none;
-//     font-size: 17px;
-//     display: block;
-//   }
-//   a.icon {
-//     background: red;
-//     display: block;
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//   }
-
-//   .topnav a:hover {
-//     background-color: brown;
-//     color: black;
-//   }
-
-//   .active {
-//     background-color: #4caf50;
-//     color: white;
-//   }
-// }
-//hamberger menu ends here
+.icon {
+  display: none;
+}
 
 nav {
   width: 100%;
   font-size: 1.8rem;
-  margin-top: 3rem;
-  .justify-align(space-around, center);
+  margin-top: 2.4rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   a {
     text-decoration: none;
   }
-  :hover {
-    color: darken(@textCol, 10%);
-  }
-  @media @mobile {
-    .direction-align(column, center);
-    font-size: 30rem;
-    margin: 0;
-    a {
-      margin: 1%;
-    }
+}
+
+nav :hover {
+  color: #e7a619;
+}
+
+@media @mobile {
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
   }
 
-  a:hover {
-    @media @mobile {
-      color: darken(@textCol, 10%);
-    }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    .direction-align(column, center);
+    color: @textCol;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+
+    font-weight: 500;
+    font-size: 30px;
+
+    text-align: center;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    .direction-align(column, center);
+    background: @orange;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 48px;
+    margin-top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: @orange;
+    color: @textCol;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: @orange;
+    color: @textCol;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+
+    text-align: center;
   }
 }

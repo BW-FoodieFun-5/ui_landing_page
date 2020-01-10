@@ -227,17 +227,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  text-align: center;
 }
 @media (max-width: 500px) {
-  body {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(24, 18, 18, 0.5), rgba(24, 18, 18, 0.5)), url(../images/FF_landing.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
 }
 .questions {
   display: flex;
@@ -246,9 +238,6 @@ body {
   vertical-align: middle;
   margin: 5%;
   font-size: 4.8rem;
-  text-align: center;
-  font-style: normal;
-  font-weight: normal;
   line-height: 6.5rem;
 }
 .questions h3 {
@@ -259,7 +248,6 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    text-align: center;
     margin-top: 69px;
   }
   .questions h3 {
@@ -278,9 +266,7 @@ body {
 }
 .statement h3 {
   font-size: 6rem;
-  width: 100%;
   line-height: 8.1rem;
-  text-align: center;
 }
 .statement p {
   font-size: 2.4rem;
@@ -289,7 +275,6 @@ body {
   .statement {
     width: 95.6%;
     margin: auto 2.17% auto 2.17%;
-    text-align: center;
   }
   .statement h3 {
     font-size: 24px;
@@ -302,7 +287,6 @@ body {
 .bottom_part {
   margin: 3.5% auto 6.11111111% auto;
   font-size: 5rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,6 +311,7 @@ body {
   width: 38.2rem;
   height: 12rem;
   margin-bottom: 1.5rem;
+  border: none;
   line-height: 4rem;
   font-size: 3rem;
 }
@@ -338,8 +323,6 @@ body {
   font-weight: 500;
   font-size: 3rem;
   line-height: 4rem;
-  text-align: center;
-  border: none;
   border-radius: 0.35rem;
   text-decoration: none;
 }
@@ -352,11 +335,8 @@ body {
     margin: auto 3.86% 28px 3.86%;
   }
   .bottom_part button a {
-    font-style: normal;
-    font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    text-decoration: none;
   }
 }
 @media (max-width: 500px) {
@@ -368,15 +348,12 @@ body {
   font-weight: 500;
   font-size: 7.2rem;
   line-height: 9.7rem;
-  text-align: center;
   margin: auto 5% auto 5%;
 }
 @media (max-width: 500px) {
   .bottom_part #tail {
-    font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    text-align: center;
   }
 }
 .about-header {
